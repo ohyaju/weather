@@ -1,4 +1,25 @@
+'use client'
+import { useEffect, useState } from "react";
+let count = 0;
 export default function Home() {
+  const [countries,setCountries]=useState([]);
+  const [number,setNumber]=useState(0)
+  useEffect(()=>{
+
+  },[])
+const getData = async ()=> {
+  const responce = await fetch  ('https://countriesnow.space/api/v0.1/countries',)
+
+  const countries = await responce.json();
+  setCountries(countries.data)
+
+  console.log(countries)
+  count++
+
+}  
+  
+getData ()
+
   return (
     <div>
       <Search />
@@ -10,27 +31,31 @@ export default function Home() {
 
 function Search() {
   return (
-    <div className="font-(Manrope)">
+    <div>
+      <div className="bg-white text-black-200 pb-200">
+        <input placeholder="Search" className="w-full outline-none text-gray-600 text-lg placeholder:font-bold text-[32px]" ></input>
+      </div>
       <div className="relative flex justify-center items-center h-screen w-screen">
+
         <div className="flex relative w-full h-full">
-          <div className="w-1/2 bg-white flex justify-center items-center">
-            <div className=" rounded-lg bg-gray-200 h-[828px] w-[414px]">
-              <div className="bg-white text-black-200">
-                <input placeholder="Search" />
-              </div>
+
+          <div className="w-1/2 bg-gray-200 flex justify-center items-center">
+
+            <div className=" rounded-lg bg-white h-[828px] w-[414px]">
+
               <div className="mt-10 mx-10 flex">
                 <div>
-                <p>February 11, 2025</p>
-                <h1 className="text-[48px]">UlanBator</h1>
+                  <p className="text-[18px]">February 11, 2025</p>
+                  <h1 className="text-[48px] md:font-bold">UlanBator</h1>
                 </div>
-                <img src="location.svg" className="ml-20"/>
+                <img src="location.svg" className="ml-20" />
               </div>
-              <div className="flex justify-center mt-40">
+              <div className="flex justify-center mt-30">
                 <img src="sun.webp" alt='sun' width={274} height={274} />
               </div>
-              <h1 className="text-[100px] ml-10">26</h1>
-              <h1 className="ml-10">Bright</h1>
-              <div className="flex justify-center gap-12 mt-10">
+              <h1 className="text-[120px] ml-10 mt-10">26</h1>
+              <h1 className="ml-10 text-orange-500 md:font-bold text-[30px]">Bright</h1>
+              <div className="flex justify-center gap-12 mt-20">
                 <img src="Home.svg" />
                 <img src="location.svg" />
                 <img src="Heart.svg" />
@@ -51,20 +76,20 @@ function Search() {
           </div>
 
           <div className="bg-black w-1/2 flex justify-center items-center">
-            <div className="rounded-lg bg-blue-900 h-[828px] w-[414px]">
+            <div className="rounded-lg bg-blue-950 h-[828px] w-[414px]">
               <div className="mt-10 mx-10 flex">
                 <div>
-                <p>February 11, 2025</p>
-                <h1 className="text-[48px]">UlanBator</h1>
+                  <p className="text-[18px]">February 11, 2025</p>
+                  <h1 className="text-[48px] md:font-bold">UlanBator</h1>
                 </div>
-                <img src="location.svg"  className="ml-20"/>
+                <img src="location.svg" className="ml-20" />
               </div>
-              <div className="flex justify-center mt-40">
+              <div className="flex justify-center mt-30">
                 <img src="moon.webp" alt='sun' width={274} height={274} />
               </div>
-              <h1 className="text-[100px] ml-10">17</h1>
-              <h1 className="ml-10">Clear</h1>
-              <div className="flex justify-center gap-12 mt-10">
+              <h1 className="text-[120px] ml-10 mt-10">17</h1>
+              <h1 className="ml-10 text-purple-600 md:font-bold text-[30px]">Clear</h1>
+              <div className="flex justify-center gap-12 mt-20">
                 <img src="Home.svg" />
                 <img src="location.svg" />
                 <img src="Heart.svg" />
