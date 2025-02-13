@@ -32,25 +32,33 @@ export default function Home() {
   }, [])
 
   return (
-    <div>
-      <Input />
-      <div className="relative flex justify-center items-center h-screen w-screen">
+    <div className="relative h-screen w-screen">
+       <Input />
 
-        <div className="flex relative w-full h-full">
+      <div className=" flex absolute inset-0 flex-col sm:flex-row">
+          <div className=" bg-gray-200 flex-1 w-1/2 sm:h-screen flex justify-center items-center">
+          </div>
+         
+          <div className="bg-black flex-1 w-1/2 sm:h-screen flex justify-center items-center ">
+           
+          </div>
+      </div>
 
+      <Logo/>
 
-          <div className="w-1/2 bg-gray-200 flex justify-center items-center">
+      
 
-
+      <div className="flex relative flex-col sm:flex-row">
+          <div className="  flex-1 w-1/2 sm:h-screen flex justify-center items-center">
             <Sun />
           </div>
-          <Logo />
-
-          <div className="bg-black w-1/2 flex justify-center items-center">
+         
+          <div className=" flex-1 w-1/2 sm:h-screen flex justify-center items-center ">
             <Moon />
           </div>
-        </div>
       </div>
+
+     
     </div>
   )
 }

@@ -1,7 +1,7 @@
 
 export const Moon = () => {
   return (
-    <div className="w-[414px] h-[828px] bg-blue-950 rounded-3xl backdrop-blur-none justify-self-center mt-2 flex flex-col items-center px-8 py-12">
+    <div className="w-[414px] h-[828px] bg-[#111827BF] rounded-3xl backdrop-blur-none justify-self-center mt-2 flex flex-col items-center px-8 py-12">
             <div className="flex flex-col justify-between h-full">
                 <div className="text-start">
                     <span className="text-gray-400 text-lg text-start">
@@ -9,7 +9,7 @@ export const Moon = () => {
                     </span>
                 </div>
                 <div className="flex gap-3">
-                    <span className="text-5xl font-semibold">Ulaanbaatar</span>
+                    <span className="text-5xl font-semibold text-white">Ulaanbaatar</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 w-[32px] h-[32px] text-gray-400">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
