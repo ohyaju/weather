@@ -21,7 +21,7 @@ export const Moon = () => {
                 />
                 <div className="bg-gradient-to-b from-[#F9FAFB] to-[#F9FAFB00] bg-clip-text text-transparent">
                     <span className="text-[120px] font-extrabold leading-[100px] block">
-                        -17°
+                    {/* {currentForecast.forecast.forecastday[0].day.mintemp_c} */}
                     </span>
                 </div>
                 <span className="text-purple-600  text-xl font-bold">

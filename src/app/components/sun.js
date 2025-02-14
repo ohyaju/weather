@@ -9,7 +9,7 @@ export const Sun = () => {
                     </span>
                 </div>
                 <div className="flex gap-3">
-                    <span className="text-5xl font-semibold">Ulaanbaatar</span>
+                    <span className="text-5xl font-semibold">ulaanbator</span>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 w-[32px] h-[32px] text-gray-400">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
@@ -21,7 +21,7 @@ export const Sun = () => {
                 />
                 <div className="bg-gradient-to-b from-[#111827] to-[#6B7280] bg-clip-text text-transparent">
                     <span className="text-[120px] font-extrabold leading-[100px] block">
-                        -26°
+                    {/* {currentForecast.forecast.forecastday[0].day.maxtemp_c} */}
                     </span>
                 </div>
                 <span className="text-[#FF8E27] text-xl font-bold">
